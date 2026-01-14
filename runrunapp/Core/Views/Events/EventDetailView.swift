@@ -156,7 +156,7 @@ struct EventDetailView: View {
                     icon: "chart.bar.fill",
                     title: "Dificuldade",
                     value: event.difficultyLevel.capitalized,
-                    color: Color(event.difficultyColor)
+                    color: event.difficultyColor
                 )
 
                 InfoCard(

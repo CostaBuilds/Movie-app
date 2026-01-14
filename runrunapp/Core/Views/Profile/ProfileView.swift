@@ -409,5 +409,5 @@ struct ChallengeDayCard: View {
 
 #Preview {
     ProfileView()
-        .modelContainer(for: [User.self, Run.self], inMemory: true)
+        .modelContainer(for: [User.self, Run.self, RunEvent.self, EventParticipant.self], inMemory: true)
 }

@@ -1,6 +1,7 @@
 import Foundation
 import SwiftData
 import CoreLocation
+import SwiftUI
 
 // MARK: - Run Event Model
 /// Represents a timed running event at a specific location (similar to Pokémon GO Raids)
@@ -191,12 +192,21 @@ extension RunEvent {
         }
     }
 
-    var difficultyColor: String {
+    var difficultyColorName: String {
         switch difficultyLevel {
         case "easy": return "green"
         case "medium": return "orange"
         case "hard": return "red"
         default: return "gray"
+        }
+    }
+
+    var difficultyColor: Color {
+        switch difficultyLevel {
+        case "easy": return .green
+        case "medium": return .orange
+        case "hard": return .red
+        default: return .gray
         }
     }
 }

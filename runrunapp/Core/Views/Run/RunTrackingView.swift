@@ -216,8 +216,8 @@ struct MapView: View {
 
 #Preview {
     let config = ModelConfiguration(isStoredInMemoryOnly: true)
-    let container = try! ModelContainer(for: User.self, Run.self, configurations: config)
-    
+    let container = try! ModelContainer(for: User.self, Run.self, RunEvent.self, EventParticipant.self, configurations: config)
+
     return RunTrackingView()
         .modelContainer(container)
 }
