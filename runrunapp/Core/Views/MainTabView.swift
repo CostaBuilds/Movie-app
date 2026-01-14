@@ -10,10 +10,10 @@ struct MainTabView: View {
                     Label("Feed", systemImage: "house.fill")
                 }
 
-            // Tab 2: Friends
-            FriendsView()
+            // Tab 2: Events (Raids)
+            EventMapView()
                 .tabItem {
-                    Label("Amigos", systemImage: "person.2.fill")
+                    Label("Eventos", systemImage: "map.fill")
                 }
 
             // Tab 3: Run (principal)
@@ -40,5 +40,5 @@ struct MainTabView: View {
 
 #Preview {
     MainTabView()
-        .modelContainer(for: [User.self, Run.self])
+        .modelContainer(for: [User.self, Run.self, RunEvent.self, EventParticipant.self])
 }

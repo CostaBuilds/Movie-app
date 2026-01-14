@@ -12,7 +12,7 @@ struct RunAppApp: App {
             let config = ModelConfiguration(isStoredInMemoryOnly: false)
 
             modelContainer = try ModelContainer(
-                for: User.self, Run.self,
+                for: User.self, Run.self, RunEvent.self, EventParticipant.self,
                 configurations: config
             )
         } catch {
