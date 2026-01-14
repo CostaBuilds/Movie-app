@@ -191,27 +191,27 @@ struct EventCard: View {
 
             // Stats
             HStack(spacing: 16) {
-                StatBubble(
+                EventStatBubble(
                     icon: "figure.run",
                     value: "\(event.participantCount)",
                     label: "pessoas"
                 )
 
                 if event.isActive {
-                    StatBubble(
+                    EventStatBubble(
                         icon: "clock.fill",
                         value: viewModel.timeRemaining(for: event).components(separatedBy: " ").first ?? "",
                         label: "restante"
                     )
                 } else {
-                    StatBubble(
+                    EventStatBubble(
                         icon: "clock",
                         value: event.formattedStartTime,
                         label: "início"
                     )
                 }
 
-                StatBubble(
+                EventStatBubble(
                     icon: "location.fill",
                     value: viewModel.formattedDistance(to: event),
                     label: "de você"
@@ -253,8 +253,8 @@ struct EventCard: View {
     }
 }
 
-// MARK: - Stat Bubble
-struct StatBubble: View {
+// MARK: - Event Stat Bubble
+struct EventStatBubble: View {
     let icon: String
     let value: String
     let label: String
