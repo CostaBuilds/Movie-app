@@ -11,7 +11,7 @@ class RunEvent {
 
     // Event Info
     var name: String
-    var description: String
+    var eventDescription: String
     var imageURL: String?
 
     // Location
@@ -55,7 +55,7 @@ class RunEvent {
         id: UUID = UUID(),
         firebaseId: String? = nil,
         name: String,
-        description: String,
+        eventDescription: String,
         imageURL: String? = nil,
         latitude: Double,
         longitude: Double,
@@ -83,7 +83,7 @@ class RunEvent {
         self.id = id
         self.firebaseId = firebaseId
         self.name = name
-        self.description = description
+        self.eventDescription = eventDescription
         self.imageURL = imageURL
         self.latitude = latitude
         self.longitude = longitude

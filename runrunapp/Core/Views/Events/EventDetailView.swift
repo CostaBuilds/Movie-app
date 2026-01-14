@@ -115,7 +115,7 @@ struct EventDetailView: View {
     private var eventInfoSection: some View {
         VStack(spacing: 16) {
             // Description
-            Text(event.description)
+            Text(event.eventDescription)
                 .font(.system(size: 15))
                 .foregroundStyle(.secondary)
                 .padding(.horizontal)
@@ -391,7 +391,7 @@ struct RewardRow: View {
 #Preview {
     let mockEvent = RunEvent(
         name: "Corrida do Amanhecer",
-        description: "Corrida matinal no parque. Venha correr com a gente!",
+        eventDescription: "Corrida matinal no parque. Venha correr com a gente!",
         latitude: -8.0522,
         longitude: -34.8821,
         radius: 150,

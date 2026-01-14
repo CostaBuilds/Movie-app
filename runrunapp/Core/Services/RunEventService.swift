@@ -280,7 +280,7 @@ extension RunEventService {
         return [
             RunEvent(
                 name: "Corrida do Amanhecer 🌅",
-                description: "Corrida matinal no parque. Junte-se a nós!",
+                eventDescription: "Corrida matinal no parque. Junte-se a nós!",
                 latitude: baseCoord.latitude + 0.01,
                 longitude: baseCoord.longitude + 0.01,
                 radius: 150,
@@ -299,7 +299,7 @@ extension RunEventService {
             ),
             RunEvent(
                 name: "Sprint Challenge ⚡️",
-                description: "Desafio de velocidade! Quem consegue o melhor pace?",
+                eventDescription: "Desafio de velocidade! Quem consegue o melhor pace?",
                 latitude: baseCoord.latitude - 0.02,
                 longitude: baseCoord.longitude + 0.015,
                 radius: 100,
@@ -318,7 +318,7 @@ extension RunEventService {
             ),
             RunEvent(
                 name: "Maratona Noturna 🌙",
-                description: "Corrida de resistência à noite",
+                eventDescription: "Corrida de resistência à noite",
                 latitude: baseCoord.latitude + 0.03,
                 longitude: baseCoord.longitude - 0.02,
                 radius: 200,

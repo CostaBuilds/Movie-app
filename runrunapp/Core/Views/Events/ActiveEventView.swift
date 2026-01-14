@@ -375,7 +375,7 @@ struct LeaderboardRow: View {
 #Preview {
     let mockEvent = RunEvent(
         name: "Sprint Challenge",
-        description: "Desafio de velocidade",
+        eventDescription: "Desafio de velocidade",
         latitude: -8.0522,
         longitude: -34.8821,
         radius: 150,
