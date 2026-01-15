@@ -280,7 +280,7 @@ struct LeaderboardView: View {
         NavigationStack {
             List {
                 ForEach(Array(sortedParticipants.enumerated()), id: \.element.id) { index, participant in
-                    LeaderboardRow(
+                    EventLeaderboardRow(
                         rank: index + 1,
                         participant: participant
                     )
@@ -299,8 +299,8 @@ struct LeaderboardView: View {
     }
 }
 
-// MARK: - Leaderboard Row
-struct LeaderboardRow: View {
+// MARK: - Event Leaderboard Row
+struct EventLeaderboardRow: View {
     let rank: Int
     let participant: EventParticipant
 
